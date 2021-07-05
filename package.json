@@ -1,0 +1,26 @@
+{
+  "name": "culturaperuana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "axios": "^0.21.1",
+    "babelify": "^10.0.0",
+    "breakpoint-sass": "^2.7.1",
+    "browserify": "^17.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "siema": "^1.5.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

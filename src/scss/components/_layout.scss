@@ -1,0 +1,43 @@
+html,
+body {
+    height: 100%;
+}
+
+.main-content {
+    flex: 1 0 auto;
+    transition: transform .2s ease;
+}
+
+.nav {
+    &.is-sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+    }
+}
+
+.nav__menu {
+    height: 0;
+    overflow: hidden;
+    transition: height .2s ease;
+}
+
+.header-links__inner-wrapper,
+.nav__inner-wrapper,
+.section__inner-wrapper,
+.footer__inner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@include breakpoint(768px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .nav__menu {
+        height: auto;
+    }
+}

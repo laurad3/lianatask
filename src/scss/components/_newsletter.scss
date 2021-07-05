@@ -1,0 +1,28 @@
+.newsletter {
+    border-top: 1px solid $border;
+
+    p {
+        text-align: center;
+    }
+}
+
+.newsletter-form {
+    margin-top: 20px;
+    
+}
+
+@include breakpoint(max-width 767px) {
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+
+        .input-text,
+        .btn-subscribe {
+            width: 100%;
+        }
+
+        .btn-subscribe {
+            margin-top: 15px;
+        }
+    }
+}

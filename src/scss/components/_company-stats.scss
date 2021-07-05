@@ -1,0 +1,46 @@
+.company-stats__item {
+    display: flex;
+    align-items: center;
+    width: 200px;
+
+    .item__image {
+        width: 46px;
+        flex-shrink: 0;
+    }
+
+    .item__content {
+        margin-left: 35px;
+    }
+
+    .item__count {
+        font-weight: 200;
+        font-size: 42px;
+    }
+
+    .item__title {
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+@include breakpoint(768px) {
+    .company-stats__item {
+        .item__count {
+            font-size: 52px;
+        }
+
+        .item__image {
+            width: 55px;
+        }
+
+        .item__title {
+            font-size: 20px;
+        }
+    }
+}
+
+@include breakpoint(1200px) {
+    .company-stats-grid {
+        padding: 0 90px;
+    }
+}

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+input,
+button {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.dropdown {
+    position: relative;
+    flex-grow: 1;
+    max-width: 150px;
+
+    .dropdown__label,
+    .dropdown__options {
+        background-color: $white;
+        border: 1px solid $border;
+        color: $itemTitle;
+        border-radius: 3px;
+        width: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .dropdown__label {
+        position: relative;
+        text-align: left;
+        padding: 8px 10px;
+        font-size: 16px;
+
+        &.is-open {
+            .dropdown__icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .dropdown__options {
+        position: absolute;
+        top: 100%;
+        flex-direction: column;
+        display: none;
+        margin-top: 5px;
+
+        li {
+            padding: 10px;
+        }
+
+        &.is-open {
+            display: flex;
+        }
+    }
+
+    .dropdown__icon {
+        position: absolute;
+        right: 10px;
+        transition: all .2s ease;
+    }
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .input-text {
+        margin-right: 10px;
+    }
+}
+
+.input-text {
+    border: 1px solid $border;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.section,
+.footer {
+    padding: 40px 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    grid-gap: 30px;
+
+    .grid__item {
+        border-radius: 3px;
+    }
+
+    .item__title {
+        color: $itemTitle;
+    }
+}
+
+p {
+    color: $itemTitle;
+}
+
+.section__title {
+    text-align: center;
+    font-weight: 400;
+    color: $sectionTitle;
+    margin-bottom: 30px;
+}
+
+@include breakpoint(768px) {
+    .input-text {
+        font-size: 16px;
+    }
+
+    .section__title {
+        font-size: 32px;
+    }
+}
+
+@include breakpoint(1200px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

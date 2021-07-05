@@ -1,0 +1,166 @@
+.header-links {
+    background-color: $green;
+    color: $white;
+    padding: 15px 20px;
+    font-weight: 200;
+
+    [id='language-select'] {
+        border-color: $white;
+        padding: 3px 20px 3px 3px;
+        color: $grey;
+    }
+}
+
+.header-links__wrapper {
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    li {
+        padding-right: 20px;
+    }
+}
+
+.header-links__inner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    img {
+        height: 38px;
+    }
+}
+
+.nav {
+    background-color: $white;
+    box-shadow: 0 0 10px 0 $grey;
+    transition: all .3s ease;
+}
+
+.menu-icon {
+    color: $green;
+    font-size: 28px;
+    margin-right: 8px;
+    transition: all .2s ease;
+    margin-top: -4px; // to align with logo
+
+    &:hover {
+        cursor: pointer;
+        color: $darkGreen;
+    }
+
+    &.is-active {
+        transform: rotate(90deg);
+    }
+}
+
+.nav__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 15px;
+}
+
+.nav__menu {
+    text-align: center;
+
+    li {
+        color: $grey;
+
+        &:hover {
+            background-color: $lightgrey;
+        }
+    }
+
+    a {
+        padding: 10px 0;
+        display: block;
+    }
+}
+
+.page-messages {
+    background-color: $green;
+    color: $white;
+    text-align: center;
+    padding: 0 20px;
+    position: fixed;
+    height: 45px;
+    line-height: 45px;
+    top: -45px;
+    width: 100%;
+    z-index: 3;
+    transition: all .3s ease;
+    box-shadow: 0 0 10px 0 $grey;
+}
+
+.header-links__wrapper {
+    margin-right: 20px;
+}
+
+.search-form {
+    padding: 20px 0;
+}
+
+@include breakpoint(768px) {
+    .nav {
+        padding: 25px 20px 20px;
+    }
+
+    .nav__header {
+        padding: 0;
+    }
+
+    .header-links__inner-wrapper {
+        justify-content: flex-end;
+    }
+
+    .header-links__wrapper {
+        margin-right: 0;
+    }
+
+    .nav__inner-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    
+        ul {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    .nav__menu {
+        margin-left: 20px;
+        color: $grey;
+        background-color: $white;
+        flex-grow: 1;
+        height: auto !important;
+
+        li {
+            padding: 0;
+            margin: 0 8px;
+
+            &:hover {
+                background-color: $white;
+            }
+        }
+
+        a {
+            padding: 0;
+            display: block;
+        }
+    }
+
+    .nav__menu__inner-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .search-form {
+        padding: 0;
+    }
+}

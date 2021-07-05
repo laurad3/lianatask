@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liana Technologies</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./frontend/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-links js-header-links">
+            <div class="header-links__inner-wrapper">
+                <div class="header-links__wrapper">
+                    <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Intranet</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown js-dropdown">
+                    <button class="dropdown__label">
+                        <span>In English</span>
+                        <i class="fas fa-caret-down dropdown__icon"></i>
+                    </button>
+                    <ul class="dropdown__options">
+                        <li>Suomeksi</li>
+                        <li>På Svenska</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="nav js-nav">
+            <div class="nav__inner-wrapper">
+                <div class="nav__header js-nav-header">
+                    <a href="#" class="logo"><img src="./frontend/images/logo.svg" alt="Liana Technologies"></a>
+                    <button class="fas fa-bars menu-icon js-menu-icon"></button>
+                </div>
+                <div class="nav__menu js-nav-menu">
+                    <div class="nav__menu__inner-wrapper">
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        <form action="#" class="form search-form">
+                            <input type="text" class="input-text" placeholder="Search" required>
+                            <button class="btn btn--primary btn-search">Search</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="page-messages js-page-messages">
+            <div class="message">Thank you for subscribing</div>
+        </div>
+    </header>
+    <main class="main-content js-main-content">
+        <div class="hero">
+            <h1 class="hero__title">Software fueling digital marketing</h1>
+            <a href="#" class="btn btn--primary">Learn more</a>
+        </div>
+        <section class="section highlight-blocks">
+            <div class="section__inner-wrapper">
+                <div class="grid highlight-blocks-grid">
+                    <a href="" class="grid__item highlight-blocks__item">
+                        <img src="./frontend/images/company.png" alt="Company" class="item__image">
+                        <h3 class="item__title">Company</h3>
+                    </a>
+                    <a href="#" class="grid__item highlight-blocks__item">
+                        <img src="./frontend/images/products.png" alt="Products" class="item__image">
+                        <h3 class="item__title">Products</h3>
+                    </a>
+                    <a href="#" class="grid__item highlight-blocks__item">
+                        <img src="./frontend/images/contact.png" alt="Contact Us" class="item__image">
+                        <h3 class="item__title">Contact Us</h3>
+                    </a>
+                </div>
+                <div class="grid company-stats-grid js-stats">
+                    <div class="grid__item company-stats__item">
+                        <div class="item__image-wrapper">
+                            <img src="./frontend/images/icons/business.png" class="item__image" alt="Clients">
+                        </div>
+                        <div class="item__content">
+                            <p class="item__count js-stat-counter" data-count-target="3000">0</p>
+                            <div class="item__title">Clients</div>
+                        </div>
+                    </div>
+                    <div class="grid__item company-stats__item">
+                        <div class="item__image-wrapper">
+                            <img src="./frontend/images/icons/face.png" class="item__image" alt="Employeers">
+                        </div>
+                        <div class="item__content">
+                            <p class="item__count js-stat-counter" data-count-target="180">0</p>
+                            <div class="item__title">Employees</div>
+                        </div>
+                    </div>
+                    <div class="grid__item company-stats__item">
+                        <div class="item__image-wrapper">
+                            <img src="./frontend/images/icons/public.png" class="item__image" alt="Daily Users">
+                        </div>
+                        <div class="item__content">
+                            <p class="item__count js-stat-counter" data-count-target="10000">0</p>
+                            <div class="item__title">Daily Users</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section rss-feed">
+            <div class="section__inner-wrapper">
+                <h2 class="section__title">Latest News</h2>
+                <div class="grid rss-feed-grid js-rss-feed">
+                    <!-- fetch with ajax -->
+                </div>
+            </div>
+        </section>
+        <section class="section references">
+            <div class="section__inner-wrapper">
+                <h2 class="section__title">References</h2>
+                <div class="grid references-grid">
+                    <a href="#" class="grid__item references-grid__item">
+                        <div class="item__logo-wrapper">
+                            <img src="./frontend/images/bosch.png" alt="#" class="item__logo">
+                        </div>
+                        <div class="item__content">
+                            <h3 class="item__title">Robert Bosch</h3>
+                            <p class="item__description">Bosch is a multinational engineering and electronics company.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="grid__item references-grid__item">
+                        <div class="item__logo-wrapper">
+                            <img src="./frontend/images/bodyshop.png" alt="#" class="item__logo">
+                        </div>
+                        <div class="item__content">
+                            <h3 class="item__title">The Body Shop</h3>
+                            <p class="item__description">The Body Shop is a global beauty brand and it has more than 3,000 stores in more than 60 countries.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="grid__item references-grid__item">
+                        <div class="item__logo-wrapper">
+                            <img src="./frontend/images/laplandhotels.png" alt="#" class="item__logo">
+                        </div>
+                        <div class="item__content">
+                            <h3 class="item__title">Lapland Hotels</h3>
+                            <p class="item__description">Lapland Hotels is the largest and the most diverse hotel chain in Lapland.</p>
+                        </div>
+                    </a>
+                    <a href="" class="grid__item references-grid__item">
+                        <div class="item__logo-wrapper">
+                            <img src="./frontend/images/ikea.png" alt="#" class="item__logo">
+                        </div>
+                        <div class="item__content">
+                            <h3 class="item__title">IKEA</h3>
+                            <p class="item__description">IKEA is a multinational furniture store.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section newsletter">
+            <div class="section__inner-wrapper">
+                <h2 class="section__title">Subscribe to our newsletter</h2>
+                <p>Follow our story and get the latest promotional news about our products and events.</p>
+                <form action="#" class="form newsletter-form js-newsletter-form">
+                    <input type="email" name="email" class="input-text" placeholder="Your email address" required>
+                    <button class="btn btn--primary btn-subscribe">Subscribe</a>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner-wrapper">
+            <div class="footer__head">
+                <h3 class="footer__company-name">Liana Technologies</h3>
+                <div class="footer__links">
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Intranet</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__company-contact">
+                    <h4 class="footer__subtitle">Sales and inquiries</h4>
+                    <div class="footer__company-contact-wrapper">
+                        <div>
+                            <p>Email: sales@lianatech.com</p>
+                            <p>Phone: +358 10 387 7053</p>
+                        </div>
+                        <a href="#" class="btn btn--primary btn-contact">Contact Us</a>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link-wrapper">
+                        <i class="fab fa-facebook-f social-link"></i>
+                    </a>
+                    <a href="#" class="social-link-wrapper">
+                        <i class="fab fa-twitter social-link"></i>
+                    </a>
+                    <a href="#" class="social-link-wrapper">
+                        <i class="fab fa-linkedin-in social-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./frontend/js/main.js"></script>
+</body>
+</html>
